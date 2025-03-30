@@ -9,7 +9,7 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'https://mindspace-1.onrender.com' }));
 app.use('/uploads', express.static('uploads', {
   setHeaders: (res, filePath) => {
     const ext = path.extname(filePath).toLowerCase();
